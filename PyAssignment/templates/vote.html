@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Candidate</h1>
+        <form method="POST">
+            <input type="text" name="candidate" placeholder="Candidate Name" required>
+            <button type="submit">Vote</button>
+        </form>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
